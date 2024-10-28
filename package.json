@@ -1,0 +1,24 @@
+{
+  "name": "agridence_api_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "NODE_ENV=test cypress open",
+    "cypress:run": "NODE_ENV=test cypress run",
+    "report": "mochawesome-merge cypress/results/*.json > cypress/results/output.json && marge cypress/results/output.json -o cypress/results"
+ 
+  },
+  "author": "Isaiah Ronoh",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.15.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
